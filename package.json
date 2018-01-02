@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^7.2.4",
+    "css-mqpacker": "^6.0.1",
+    "cssnano": "^3.10.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-file-include": "^2.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-less": "^3.4.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-svgstore": "^6.1.1",
+    "gulp-uglify": "^3.0.0",
+    "run-sequence": "^2.2.0"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "npm run build && gulp watch"
+  },
+  "dependencies": {}
+}
