@@ -1,11 +1,45 @@
 @import "libs.less";
 @import "vars.less";
 @import "mixins.less";
+@import "media.less";
 
 body {
   min-width: 320px;
   margin: 0;
   padding: 0;
   font-size: 16px;
+  line-height: 1.4;
+  color: @txt-color;
   overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: @accent;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s, color 0.2s;
+
+  &:hover {
+    background-color: darken(@accent, 10%);
+  }
+
+  &:active {
+    background-color: darken(@accent, 20%);
+  }
 }
